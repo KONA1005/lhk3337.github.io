@@ -1,6 +1,20 @@
-# Array
+---
+title: "[Javascript] Array Method"
+excerpt: "Javascript의 배열을 어떻게 처리하는지 확인해보자. "
 
-## 1. 배열에서 마지막 요소 추가 push( )
+categories:
+  - Javascript
+tags:
+  - [Blog, jekyll, Github, Git]
+
+toc: true
+toc_sticky: true
+
+date: 2021-09-18
+last_modified_at: 2020-09-18
+---
+
+# 1. 배열에서 마지막 요소 추가 push( )
 
 ```javascript
 const target = ["a", "b", "c", "d", "e"];
@@ -8,28 +22,28 @@ target[target.length] = "f";
 target.push("f");
 ```
 
-## 2. 배열에서 마지막 요소 삭제 : pop( )
+# 2. 배열에서 마지막 요소 삭제 : pop( )
 
 ```javascript
 const target2 = ["a", "b", "c", "d", "e"];
 target2, pop(); // e 제거 ->['a', 'b', 'c', 'd']
 ```
 
-## 3. 배열에서 첫번째 요소 추가 : unshift( )
+# 3. 배열에서 첫번째 요소 추가 : unshift( )
 
 ```javascript
 const target3 =['b', 'c', 'd', 'e', 'f'];
 target3.unshift('a'); -> ['a', 'b', 'c', 'd', 'e', 'f'];
 ```
 
-## 4. 배열에서 첫번째 요소 삭제 : shift( )
+# 4. 배열에서 첫번째 요소 삭제 : shift( )
 
 ```javascript
 const target4 =['a', 'b', 'c', 'd', 'e'];
 target4.shift('a'); -> ['b', 'c', 'd', 'e'];
 ```
 
-## 5. 배열에서 중간 요소 삭제 : splice(시작 인덱스, 배열에서 제거할 요소의 수)
+# 5. 배열에서 중간 요소 삭제 : splice(시작 인덱스, 배열에서 제거할 요소의 수)
 
 ```javascript
 const target5 = ["가", "나", "다", "라", "마"];
@@ -77,7 +91,7 @@ console.log(arr);
 ["가", "나", "바", "다", "라", "마"]
 ```
 
-## 6. 배열에서 요소찾기 : includes( ),
+# 6. 배열에서 요소찾기 : includes( ),
 
 #### 요소가 있으면 true, 없으면 false로 return, 반복문과 조건문에 주로 사용
 
@@ -87,13 +101,12 @@ const result = target.includes("다");
 const result2 = target.includes("카");
 console.log(result);
 console.log(result2);
-
-<결과>
-true
-false
+// <결과>
+true;
+false;
 ```
 
-## 7. 배열 인덱스 위치 확인 : indexOf, lastIndexOf
+# 7. 배열 인덱스 위치 확인 : indexOf, lastIndexOf
 
 #### 앞에서 찾기(indexOf), 뒤에서 찾기(lastIndexOf), 만일 배열의 인덱스의 값이 없으면 -1로 return
 
@@ -140,7 +153,7 @@ if(arr.indexOf(1) > -1){ //indexOf가 0번째 자리일 경우
 1 찾았다.
 ```
 
-## 8. 배열 반복하기
+# 8. 배열 반복하기
 
 #### while문
 
@@ -194,7 +207,7 @@ while (index > -1) {
 }
 ```
 
-##### 내가 푼것
+#### 내가 푼것
 
 ```javascript
 for (let i = 0; i < arr.length; i++) {
