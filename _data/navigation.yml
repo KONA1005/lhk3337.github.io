@@ -1,9 +1,9 @@
 # main links
 main:
   - title: "Home"
-    url: https://lhk3337.github.io
+    url: /index.html
   - title: "Category"
-    url: https://lhk3337.github.io/category
+    url: /categories/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
