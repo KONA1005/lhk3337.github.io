@@ -236,14 +236,14 @@
 
     a {
       position: relative;
-
+      font-family: $cafe24;
       &:before {
         content: "";
         position: absolute;
         left: 0;
         bottom: 0;
         height: 4px;
-        background: $primary-color;
+        background: $facebook-color;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -279,7 +279,7 @@
     a {
       margin: 0;
       padding: 10px 20px;
-      font-size: $type-size-5;
+      font-size: $type-size-4;
 
       &:hover {
         color: $masthead-link-color-hover;
@@ -443,6 +443,7 @@
 
   a {
     color: inherit;
+    font-family: $cafe24;
   }
 
   .active {
@@ -568,6 +569,6 @@
   }
 
   li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
+    padding-left: 3.25rem;
   }
 }

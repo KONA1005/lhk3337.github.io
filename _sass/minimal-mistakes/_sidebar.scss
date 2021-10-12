@@ -56,7 +56,7 @@
 
   p,
   li {
-    font-family: $sans-serif;
+    font-family: "Cafe24Oneprettynight";
     font-size: $type-size-6;
     line-height: 1.5;
   }
@@ -153,12 +153,14 @@
 
   @include breakpoint($large) {
     display: block;
+    font-family: "GowunBatang-Regular";
     width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
 
   a {
+    font-family: "Iropke Batang";
     color: inherit;
     text-decoration: none;
   }
@@ -216,7 +218,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -350,4 +352,3 @@
     margin-right: initial;
   }
 }
-
