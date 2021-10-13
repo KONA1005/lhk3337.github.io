@@ -285,7 +285,7 @@ body {
 .page__share-title {
   color: #646769;
   margin-bottom: 10px;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
   text-transform: uppercase;
 }
 
@@ -297,7 +297,7 @@ body {
   margin-top: 2em;
   color: $muted-text-color;
   font-family: $sans-serif;
-  font-size: $type-size-6;
+  font-size: $type-size-8;
 
   p {
     margin: 0;
@@ -309,9 +309,9 @@ body {
 }
 
 .page__meta-title {
+  margin-top: 1px;
   margin-bottom: 10px;
-  font-size: $type-size-6;
-  text-transform: uppercase;
+  font-size: $type-size-5;
 }
 
 .page__meta-sep::before {
@@ -325,6 +325,8 @@ body {
    ========================================================================== */
 
 .page__taxonomy {
+  margin-top: -10px;
+  font-size: $type-size-7;
   .sep {
     display: none;
   }
@@ -342,7 +344,6 @@ body {
   text-decoration: none;
   border: 1px solid mix(#000, $border-color, 25%);
   border-radius: $border-radius;
-
   &:hover {
     text-decoration: none;
     color: $link-color-hover;
