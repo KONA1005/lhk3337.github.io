@@ -19,7 +19,7 @@ locale: "ko-KR"
 title: "Holim's Devlog"
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "임홍규"
+name: "holim"
 description: "프론트엔드에 관련된 다양한 것을 배우고 정리하는 블로그"
 url: "https://lhk3337.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
