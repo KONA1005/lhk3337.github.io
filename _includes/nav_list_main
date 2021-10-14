@@ -229,11 +229,11 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">etc</span>
+        <span class="nav__sub-title">TIL</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">Blog Dev ({{category[1].size}})</a></li>
+                    {% if category[0] == "oct" %}
+                        <li><a href="/categories/oct" class="">oct ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
