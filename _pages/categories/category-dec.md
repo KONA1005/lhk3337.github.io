@@ -1,7 +1,7 @@
 ---
-title: "모던 자바스크립트 Deep Dive 스터디"
+title: "2021년 11월"
 layout: archive
-permalink: categories/deep_dive
+permalink: categories/202111
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.deep_dive %}
+{% assign posts = site.categories.dec2021 %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

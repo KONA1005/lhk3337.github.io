@@ -1,7 +1,7 @@
 ---
-title: "10월"
+title: "2021년 10월"
 layout: archive
-permalink: categories/oct
+permalink: categories/202110
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ---
 
-{% assign posts = site.categories.oct %}
+{% assign posts = site.categories.oct2021 %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
