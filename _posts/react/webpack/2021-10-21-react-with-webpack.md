@@ -210,7 +210,10 @@ npm i -D webpack-dev-server
     ],
     ...
     ...
-    devServer: { devMiddleware: { publicPath: "/dist/" }, static: { directory: path.resolve(__dirname) }}, // devServer 추가
+    devServer: {
+       devMiddleware: { publicPath: "/dist/" }, // webpack이 생성해주는 경로
+       static: { directory: path.resolve(__dirname)} // 실제로 존재하는 정적 파일 경로
+    }, // devServer 추가
     ...
   }
   ```
