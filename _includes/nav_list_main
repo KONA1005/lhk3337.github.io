@@ -42,7 +42,7 @@
                 {% endfor %}
             </ul>
         
-        <span class="nav__sub-title">TIL</span>
+        <!-- <span class="nav__sub-title">TIL</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "oct2021" %}
@@ -56,7 +56,7 @@
                         <li><a href="/categories/202111" class="">202111 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
+            </ul> -->
       </li>
       <li>	
             
