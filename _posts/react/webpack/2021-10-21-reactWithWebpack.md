@@ -7,7 +7,7 @@ tags:
   - [react, webpack]
 
 toc: true
-toc_sticky: false
+toc_sticky: true
 
 date: 2021-10-21
 last_modified_at: 2021-10-21
