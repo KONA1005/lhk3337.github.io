@@ -509,13 +509,14 @@
     max-width: 140px;
     max-height: 38px;
     margin-bottom: 1em;
+    margin-top: 1em;
   }
 
   a {
     color: #355c7d;
     font-family: $cafe24;
     font-weight: bold;
-    font-size: $type-size-4;
+    font-size: 17px;
   }
 
   .active {
@@ -566,7 +567,7 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $cafe24;
-  font-size: $type-size-3;
+  font-size: $type-size-4;
   font-weight: bold;
   color: #000;
   border-bottom: 1px solid $border-color;
