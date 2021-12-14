@@ -138,6 +138,7 @@ a {
     color: $link-color-hover;
     outline: 0;
   }
+  text-decoration: none;
 }
 
 /* buttons */
@@ -154,7 +155,6 @@ kbd,
 samp,
 pre {
   font-family: $monospace;
-  font-size: 0.9em;
 }
 
 pre {

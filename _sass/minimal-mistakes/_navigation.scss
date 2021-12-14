@@ -515,7 +515,7 @@
     color: #355c7d;
     font-family: $cafe24;
     font-weight: bold;
-    font-size: $type-size-5;
+    font-size: $type-size-4;
   }
 
   .active {
@@ -566,7 +566,7 @@
   margin: 0.5rem 0;
   padding: 0.25rem 0;
   font-family: $cafe24;
-  font-size: $type-size-5;
+  font-size: $type-size-3;
   font-weight: bold;
   color: #000;
   border-bottom: 1px solid $border-color;
@@ -587,7 +587,7 @@
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
@@ -616,7 +616,6 @@
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    font-size: 0.6rem;
     border-bottom: 1px solid $border-color;
 
     &:hover {
