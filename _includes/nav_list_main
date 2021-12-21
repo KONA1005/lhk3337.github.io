@@ -11,15 +11,22 @@
         <span class="nav__sub-title">FrontEnd</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "webpack" %}
-                        <li><a href="/categories/webpack" class="">Webpack ({{category[1].size}})</a></li>
+                    {% if category[0] == "react"%}
+                    <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "react"%}
-                    <li><a href="/categories/react" class="">React ({{category[1].size}})</a></li>
+                    {% if category[0] == "web"%}
+                    <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "webpack" %}
+                        <li><a href="/categories/webpack" class="">Webpack ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
