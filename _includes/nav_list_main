@@ -18,6 +18,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "nextjs"%}
+                    <li><a href="/categories/nextjs" class="">NextJS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "web"%}
                     <li><a href="/categories/web" class="">Web ({{category[1].size}})</a></li>
                     {% endif %}
