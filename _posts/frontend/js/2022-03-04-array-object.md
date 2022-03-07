@@ -178,6 +178,110 @@ listOfUserGroups result :
  ["editor", "admin"];
 ```
 
+### 9. 객체 key-value map 역전
+
+```js
+let cities = {
+  Lyon: "France",
+  Berlin: "Germany",
+  Paris: "France",
+};
+
+let countries = Object.keys(cities).reduce((acc, k) => {
+  let country = cities[k];
+  acc[country] = [...(acc[country] || []), k];
+  return acc;
+}, {});
+
+// 1 cycle : acc => {}, k : Lyon, county: France,
+// 2 cycle : acc => { France: [ 'Lyon' ] }, k : Berlin, country : Germany
+// 3 cycle : acc => { France: [ 'Lyon' ], Germany: [ 'Berlin' ] }, k : Paris, county: France,
+// acc => { France: [ 'Lyon', 'Paris' ], Germany: [ 'Berlin' ] }
+```
+
+### 10. 섭씨 온도를 화씨 온도로 바꾸기
+
+```js
+et celsius = [-15, -5, 0, 10, 16, 20, 24, 32];
+let fahrenheit = celsius.map((t) => t * 1.8 + 32); // 섭씨 도를 화씨 도로 변경
+
+console.log(fahrenheit);
+// [5, 23, 32, 50, 60.8, 68, 75.2, 89.6]
+```
+
+### 11. 객체를 쿼리 스트링으로 인코딩하기
+
+```js
+let params = { lat: 45, lng: 6, alt: 1000 };
+let queryString = Object.entries(params) // 객체의 키와 값을 담은 배열로 반환
+  .map((p) => encodeURIComponent(p[0]) + "=" + encodeURIComponent(p[1]))
+  // [ 'lat=45', 'lng=6', 'alt=1000' ]
+  .join("&");
+
+// Object.entries(params);  [ [ 'lat', 45 ], [ 'lng', 6 ], [ 'alt', 1000 ] ]
+// encodeURIComponent : URI로 데이터를 전달하기 위해서 문자열을 인코딩(lat과 45를 인코딩)
+
+//queryString Result :  lat=45&lng=6&alt=1000
+```
+
+### 12. 명시된 키와 함께 읽기 가능한 string으로 유저 테이블 출력
+
+```js
+let users = [
+  { id: 11, name: "John", age: 23, group: "editor" },
+  { id: 47, name: "Tom", age: 28, group: "admin" },
+  { id: 84, name: "Bread", age: 34, group: "editor" },
+  { id: 33, name: "Holand", age: 28, group: "admin" },
+];
+
+users.map(({ id, age, group }) => `\n${id} ${age} ${group}`).join("");
+
+user Table result
+"
+11 23 editor
+47 28 admin
+85 34 editor
+97 28 admin"
+```
+
+### 13. 객체 배열에서 key-value쌍을 찾아서 바꾸기
+
+```js
+let users = [
+  { id: 11, name: "John", age: 23, group: "editor" },
+  { id: 47, name: "Tom", age: 28, group: "admin" },
+  { id: 84, name: "Bread", age: 34, group: "editor" },
+  { id: 33, name: "Holand", age: 28, group: "admin" },
+];
+
+let updatedUsers = users.map((p) =>
+  p.id !== 47 ? p : { ...p, age: p.age + 1 }
+);
+// users의 id가 47이 아니면 그냥 요소를 출력하고, 47이 맞으면 users의 age에 1을 더해 updatedUsers 변수에 저장
+
+console.log(updatedUsers)
+{ id: 47, name: 'Tom', age: 29, group: 'admin' },
+```
+
+### 14. A와 B의 합집합
+
+```js
+let arrA = [1, 4, 3, 2];
+let arrB = [5, 2, 6, 7, 1];
+[...new Set([...arrA, ...arrB])]; // 배열 arrA와 배열 arrB를 중복제거 후 새로운 배열로 반환
+
+// returns [1, 4, 3, 2, 5, 6, 7]
+```
+
+### 15. A와 B의 교집합
+
+```js
+let arrA = [1, 4, 3, 2];
+let arrB = [5, 2, 6, 7, 1];
+arrA.filter((it) => arrB.includes(it)); // returns [1, 2]
+// arrB에 arrA항목(it)이 포함되어 있는 것만 출력
+```
+
 ## 참조
 
 - [map, reduce, filter를 유용하게 활용하는 15가지 방법](https://dongmin-jang.medium.com/javascript-15%EA%B0%80%EC%A7%80-%EC%9C%A0%EC%9A%A9%ED%95%9C-map-reduce-filter-bfbc74f0debd)
