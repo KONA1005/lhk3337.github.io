@@ -1,5 +1,5 @@
 ---
-title: "[nodejs] 실패율"
+title: "[nodejs][프로그래머스] 실패율"
 
 categories:
   - "programers"
