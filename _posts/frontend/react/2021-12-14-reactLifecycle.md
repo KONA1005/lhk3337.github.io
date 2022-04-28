@@ -10,8 +10,13 @@ toc: true
 toc_sticky: true
 
 date: 2021-12-14
-last_modified_at: 2021-12-16
+last_modified_at: 2022-04-28
 ---
+
+<p>
+ <img src="/assets/img/react/reactLifeCycle.png" width="1000" style="margin:10px;" >
+  <em>React LifeCycle Map</em>
+</p>
 
 ## class Life Cycle
 
@@ -73,3 +78,4 @@ useEffect(() => {
 - [React LifeCycle](https://ko.reactjs.org/docs/state-and-lifecycle.html)
 - [React useEffect](https://ko.reactjs.org/docs/hooks-effect.html)
 - [ZeroCho 리액트 강의](https://www.youtube.com/watch?v=F8eqh1Y4n3k&list=PLcqDmjxt30RtqbStQqk-eYMK8N-1SYIFn&index=41)
+- [React LifeCycle 사진 출처](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
